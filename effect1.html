@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 350px;
+            border: 2px solid black;
+            margin: 100px auto;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .box img {
+            width: 100%;
+            display: block;
+            transition: all 0.5s;
+
+        }
+
+        /* .box:hover img {
+            animation-duration: 2s;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards
+        }
+
+        @keyframes image {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.5);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        } */
+
+        .caption {
+            text-align: center;
+            position: absolute;
+            top: -100%;
+            left: 0;
+            background: rgba(223, 19, 223, 0.541);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: all 0.5s;
+        }
+
+        .box:hover .caption {
+            top: 0;
+        }
+
+        .box:hover img {
+            transform: scale(1.5);
+        }
+
+
+        h1 {
+            color: yellow;
+            font-size: 45px;
+        }
+
+        .caption p {
+            padding: 10px 0;
+            border-top: 2px solid white;
+            border-bottom: 2px solid white;
+        }
+
+
+        /* transition sob somoy jake transition korbo tar upor dibo. jake hover korbo take dibo na */
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="./images/family.PNG" alt="">
+        <div class="caption">
+            <h1>We are family</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ipsa esse nihil, quas nesciunt non? Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Quos, porro.</p>
+        </div>
+    </div>
+</body>
+
+</html>
